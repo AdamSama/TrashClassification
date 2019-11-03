@@ -20,4 +20,5 @@ for i in range(1,8):
             images_file=images_file,
             threshold='0.6',
             owners=["me"]).get_result()
-        print(classes['images'][0]['classifiers'][0]['classes'][0]['class'])
+        print(classes['images'][0]['classifiers'][0]['classes'][0]['class'],'score is '+\
+              str(classes['images'][0]['classifiers'][0]['classes'][0]['score']))
